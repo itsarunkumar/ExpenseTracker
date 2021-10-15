@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Expenses from './comp/Expenses';
+import Expenses from './comp/Expenses/Expenses';
 
 export default function App() {
   const expenses = [
