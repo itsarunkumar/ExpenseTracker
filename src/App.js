@@ -25,9 +25,15 @@ export default function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log('-------this is APP js file')
+    console.log(expenses);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense addExpen={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
