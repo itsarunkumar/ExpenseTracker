@@ -2,10 +2,13 @@ import React from 'react';
 import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 import Card from '../UI/Card';
+import ExpensesFilter from '../ExpenseFilter/ExpenseFilter';
 
 function Expenses({ items }) {
   return (
+    <div>
     <Card className="expenses">
+      <ExpensesFilter/>
       <ExpenseItem
         date={items[0].date}
         title={items[0].title}
@@ -27,6 +30,7 @@ function Expenses({ items }) {
         amount={items[3].amount}
       />
     </Card>
+    </div>
   );
 }
 
